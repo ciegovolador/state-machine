@@ -9,14 +9,29 @@ contract testSM {
 
 StateMachine sm = StateMachine(DeployedAddresses.StateMachine());
 
-uint expectedState = 0;
-
+uint expectedConstructorState = 1;
+uint expectedEndState = 0;
+uint expectedInitState = 1;
 address expectedAdress = address(this);
 
 
-function testGetState() public {
-  uint returnedState = uint(sm.getState());
+function testConstructorState() public
+{
+	uint returnedState = uint(sm.getState());
+	Assert.equal(returnedState, expectedConstructorState, "when deployed State Machine should be turned on .");
+}
 
-  Assert.equal(returnedState, expectedState, "Adoption of the expected pet should match what is returned.");
+function testEndState() public
+{
+	sm.end();
+	uint returnedState = uint(sm.getState());
+	Assert.equal(returnedState, expectedEndState,'when started it can be turned off');
+}
+
+function testInitState() public
+{
+	sm.init();
+	uint returnedState = uint(sm.getState());
+	Assert.equal(returnedState, expectedInitState, 'when is off it can be turned on');
 }
 }

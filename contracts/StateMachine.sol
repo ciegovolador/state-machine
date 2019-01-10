@@ -2,65 +2,82 @@ pragma solidity 0.5.0;
 
 contract StateMachine {
 
-enum State {inited, loaded,  playing,  paused, unloaded, stoped, ended}
+enum State {off, on, loaded,  playing, stoped, unloaded}
 
 State state;
 
-constructor() public {
-state = State.inited;
-}
-
-function _setState( State _state) private returns (bool)
+constructor() public
 {
-require(uint(_state) <= uint(State.ended),'codigo incorrecto');
-state = _state;
-
-return true;
-
+	state = State.on;
 }
 
-function getState() view public returns(State){
-
-return state;
-
-
-}
-
-function end() public returns (bool) 
+function _setState( State _state) private
 {
-require(state != State.ended,'machine is turn off');
-require(state != State.playing,'machine is playing, stop before turn off');
-
-return _setState(State.ended);
-
-
+	state = _state;
 }
 
-function init() public returns (bool)
+function getState() view public returns(State)
 {
-require(state == State.ended,'machine is running');
-return _setState(State.inited);
-
+	return state;
 }
 
-function play() public returns (bool)
+function on() private view
 {
-require(state != State.playing,'machine is playing');
-require( state != State.ended, 'machine is off, turn on first');
-_setState(State.playing);
-return true;
+	require(state != State.off, 'machine is turn off');
 }
 
-function stop() public returns(bool)
-
+function off() private view
 {
-require(state != State.ended, 'machine is turned off');
-require( state == State.playing , 'Machine is not playing');
-
-_setState(State.stoped);
-
+	require(state == State.off, 'machine× is turned on');
 }
 
+function noLoaded() private view
+{
+	require(state != State.loaded,'machine is loaded');
+}
+
+function noPlaying() private view
+{
+	require(state != State.playing, 'machine is plaing');
+}
+
+function Playing() private view
+{
+	require(state == State.playing, 'machine is not playing');
+}
+function noUnloaded() private view
+{
+	require(state != State.unloaded, 'machine is unloaded');
+}
+
+function end() public 
+{
+	on();
+	noPlaying();
+	_setState(State.off);
+}
+
+function init() public
+{
+	off();
+	_setState(State.on);
+}
+
+function play() public
+{
+	on();
+	noPlaying();
+	noUnloaded();
+	_setState(State.playing);
+}
+
+function stop() public
+{
+	
+	Playing();
+	_setState(State.stoped);
+
+}
 
 
 }
