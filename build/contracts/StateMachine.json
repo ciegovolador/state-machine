@@ -46,6 +46,16 @@
     {
       "constant": false,
       "inputs": [],
+      "name": "load",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x86d5c4be"
+    },
+    {
+      "constant": false,
+      "inputs": [],
       "name": "play",
       "outputs": [],
       "payable": false,
@@ -62,22 +72,32 @@
       "stateMutability": "nonpayable",
       "type": "function",
       "signature": "0x07da68f5"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "unload",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x925477b7"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5060016000806101000a81548160ff0219169083600581111561002f57fe5b02179055506104ee806100436000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806307da68f5146100725780631865c57d1461008957806393e84cd9146100c2578063e1c7392a146100d9578063efbe1c1c146100f0575b600080fd5b34801561007e57600080fd5b50610087610107565b005b34801561009557600080fd5b5061009e61011b565b604051808260058111156100ae57fe5b60ff16815260200191505060405180910390f35b3480156100ce57600080fd5b506100d7610131565b005b3480156100e557600080fd5b506100ee610155565b005b3480156100fc57600080fd5b50610105610169565b005b61010f610185565b6101196004610223565b565b60008060009054906101000a900460ff16905090565b610139610248565b6101416102e7565b610149610386565b6101536003610223565b565b61015d610424565b6101676001610223565b565b610171610248565b6101796102e7565b6101836000610223565b565b6003600581111561019257fe5b6000809054906101000a900460ff1660058111156101ac57fe5b141515610221576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65206973206e6f7420706c6179696e670000000000000000000081525060200191505060405180910390fd5b565b806000806101000a81548160ff0219169083600581111561024057fe5b021790555050565b6000600581111561025557fe5b6000809054906101000a900460ff16600581111561026f57fe5b141515156102e5576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e65206973207475726e206f66660000000000000000000000000081525060200191505060405180910390fd5b565b600360058111156102f457fe5b6000809054906101000a900460ff16600581111561030e57fe5b14151515610384576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f6d616368696e6520697320706c61696e6700000000000000000000000000000081525060200191505060405180910390fd5b565b60058081111561039257fe5b6000809054906101000a900460ff1660058111156103ac57fe5b14151515610422576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e6520697320756e6c6f616465640000000000000000000000000081525060200191505060405180910390fd5b565b6000600581111561043157fe5b6000809054906101000a900460ff16600581111561044b57fe5b1415156104c0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65c397206973207475726e6564206f6e0000000000000000000081525060200191505060405180910390fd5b56fea165627a7a723058207e57cd2ed5bd3c6d7c81ea1d07ac3dc1fcd53face7b51adf99762da9357bc1fe0029",
-  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806307da68f5146100725780631865c57d1461008957806393e84cd9146100c2578063e1c7392a146100d9578063efbe1c1c146100f0575b600080fd5b34801561007e57600080fd5b50610087610107565b005b34801561009557600080fd5b5061009e61011b565b604051808260058111156100ae57fe5b60ff16815260200191505060405180910390f35b3480156100ce57600080fd5b506100d7610131565b005b3480156100e557600080fd5b506100ee610155565b005b3480156100fc57600080fd5b50610105610169565b005b61010f610185565b6101196004610223565b565b60008060009054906101000a900460ff16905090565b610139610248565b6101416102e7565b610149610386565b6101536003610223565b565b61015d610424565b6101676001610223565b565b610171610248565b6101796102e7565b6101836000610223565b565b6003600581111561019257fe5b6000809054906101000a900460ff1660058111156101ac57fe5b141515610221576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65206973206e6f7420706c6179696e670000000000000000000081525060200191505060405180910390fd5b565b806000806101000a81548160ff0219169083600581111561024057fe5b021790555050565b6000600581111561025557fe5b6000809054906101000a900460ff16600581111561026f57fe5b141515156102e5576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e65206973207475726e206f66660000000000000000000000000081525060200191505060405180910390fd5b565b600360058111156102f457fe5b6000809054906101000a900460ff16600581111561030e57fe5b14151515610384576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f6d616368696e6520697320706c61696e6700000000000000000000000000000081525060200191505060405180910390fd5b565b60058081111561039257fe5b6000809054906101000a900460ff1660058111156103ac57fe5b14151515610422576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e6520697320756e6c6f616465640000000000000000000000000081525060200191505060405180910390fd5b565b6000600581111561043157fe5b6000809054906101000a900460ff16600581111561044b57fe5b1415156104c0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65c397206973207475726e6564206f6e0000000000000000000081525060200191505060405180910390fd5b56fea165627a7a723058207e57cd2ed5bd3c6d7c81ea1d07ac3dc1fcd53face7b51adf99762da9357bc1fe0029",
-  "sourceMap": "24:1118:1:-;;;121:43;8:9:-1;5:2;;;30:1;27;20:12;5:2;121:43:1;153:8;145:5;;:16;;;;;;;;;;;;;;;;;;;;;;;;24:1118;;;;;;",
-  "deployedSourceMap": "24:1118:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1071:67;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1071:67:1;;;;;;230:65;;8:9:-1;5:2;;;30:1;27;20:12;5:2;230:65:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;980:89;;8:9:-1;5:2;;;30:1;27;20:12;5:2;980:89:1;;;;;;922:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;922:56:1;;;;;;850:70;;8:9:-1;5:2;;;30:1;27;20:12;5:2;850:70:1;;;;;;1071:67;1099:9;:7;:9::i;:::-;1111:23;1121:12;1111:9;:23::i;:::-;1071:67::o;230:65::-;270:5;287;;;;;;;;;;;280:12;;230:65;:::o;980:89::-;1006:4;:2;:4::i;:::-;1013:11;:9;:11::i;:::-;1027:12;:10;:12::i;:::-;1042:24;1052:13;1042:9;:24::i;:::-;980:89::o;922:56::-;948:5;:3;:5::i;:::-;956:19;966:8;956:9;:19::i;:::-;922:56::o;850:70::-;876:4;:2;:4::i;:::-;883:11;:9;:11::i;:::-;897:20;907:9;897;:20::i;:::-;850:70::o;656:95::-;708:13;699:22;;;;;;;;:5;;;;;;;;;;;:22;;;;;;;;;691:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;656:95::o;166:62::-;219:6;211:5;;:14;;;;;;;;;;;;;;;;;;;;;;;;166:62;:::o;297:83::-;344:9;335:18;;;;;;;;:5;;;;;;;;;;;:18;;;;;;;;;;327:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:83::o;562:92::-;616:13;607:22;;;;;;;;:5;;;;;;;;;;;:22;;;;;;;;;;599:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;562:92::o;752:96::-;807:14;798:23;;;;;;;;:5;;;;;;;;;;;:23;;;;;;;;;;790:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;752:96::o;382:87::-;430:9;421:18;;;;;;;;:5;;;;;;;;;;;:18;;;;;;;;;413:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:87::o",
-  "source": "pragma solidity 0.5.0;\n\ncontract StateMachine {\n\nenum State {off, on, loaded,  playing, stoped, unloaded}\n\nState state;\n\nconstructor() public\n{\n\tstate = State.on;\n}\n\nfunction _setState( State _state) private\n{\n\tstate = _state;\n}\n\nfunction getState() view public returns(State)\n{\n\treturn state;\n}\n\nfunction on() private view\n{\n\trequire(state != State.off, 'machine is turn off');\n}\n\nfunction off() private view\n{\n\trequire(state == State.off, 'machine× is turned on');\n}\n\nfunction noLoaded() private view\n{\n\trequire(state != State.loaded,'machine is loaded');\n}\n\nfunction noPlaying() private view\n{\n\trequire(state != State.playing, 'machine is plaing');\n}\n\nfunction Playing() private view\n{\n\trequire(state == State.playing, 'machine is not playing');\n}\nfunction noUnloaded() private view\n{\n\trequire(state != State.unloaded, 'machine is unloaded');\n}\n\nfunction end() public \n{\n\ton();\n\tnoPlaying();\n\t_setState(State.off);\n}\n\nfunction init() public\n{\n\toff();\n\t_setState(State.on);\n}\n\nfunction play() public\n{\n\ton();\n\tnoPlaying();\n\tnoUnloaded();\n\t_setState(State.playing);\n}\n\nfunction stop() public\n{\n\t\n\tPlaying();\n\t_setState(State.stoped);\n\n}\n\n\n}\n",
+  "bytecode": "0x608060405234801561001057600080fd5b5060016000806101000a81548160ff0219169083600581111561002f57fe5b02179055506106d0806100436000396000f3fe608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806307da68f5146100885780631865c57d1461009f57806386d5c4be146100d8578063925477b7146100ef57806393e84cd914610106578063e1c7392a1461011d578063efbe1c1c14610134575b600080fd5b34801561009457600080fd5b5061009d61014b565b005b3480156100ab57600080fd5b506100b461015f565b604051808260058111156100c457fe5b60ff16815260200191505060405180910390f35b3480156100e457600080fd5b506100ed610175565b005b3480156100fb57600080fd5b506101046101a1565b005b34801561011257600080fd5b5061011b6101c5565b005b34801561012957600080fd5b506101326101e9565b005b34801561014057600080fd5b506101496101fd565b005b610153610229565b61015d60046102c7565b565b60008060009054906101000a900460ff16905090565b61017d6102ec565b61018561038b565b61018d61042a565b6101956104c9565b61019f60026102c7565b565b6101a96102ec565b6101b161042a565b6101b9610568565b6101c360056102c7565b565b6101cd6102ec565b6101d561042a565b6101dd610568565b6101e760036102c7565b565b6101f1610606565b6101fb60016102c7565b565b6102056102ec565b61020d61038b565b61021561042a565b61021d6104c9565b61022760006102c7565b565b6003600581111561023657fe5b6000809054906101000a900460ff16600581111561025057fe5b1415156102c5576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65206973206e6f7420706c6179696e670000000000000000000081525060200191505060405180910390fd5b565b806000806101000a81548160ff021916908360058111156102e457fe5b021790555050565b600060058111156102f957fe5b6000809054906101000a900460ff16600581111561031357fe5b14151515610389576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e65206973207475726e206f66660000000000000000000000000081525060200191505060405180910390fd5b565b6002600581111561039857fe5b6000809054906101000a900460ff1660058111156103b257fe5b14151515610428576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f6d616368696e65206973206c6f6164656400000000000000000000000000000081525060200191505060405180910390fd5b565b6003600581111561043757fe5b6000809054906101000a900460ff16600581111561045157fe5b141515156104c7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f6d616368696e6520697320706c6179696e67000000000000000000000000000081525060200191505060405180910390fd5b565b600460058111156104d657fe5b6000809054906101000a900460ff1660058111156104f057fe5b14151515610566576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f4d616368696e652069732053746f70656400000000000000000000000000000081525060200191505060405180910390fd5b565b60058081111561057457fe5b6000809054906101000a900460ff16600581111561058e57fe5b14151515610604576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e6520697320756e6c6f616465640000000000000000000000000081525060200191505060405180910390fd5b565b6000600581111561061357fe5b6000809054906101000a900460ff16600581111561062d57fe5b1415156106a2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65c397206973207475726e6564206f6e0000000000000000000081525060200191505060405180910390fd5b56fea165627a7a723058207b93dd840b3e2925c837ea3f69f8486669618ccf1161765350cba30f1e52597b0029",
+  "deployedBytecode": "0x608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806307da68f5146100885780631865c57d1461009f57806386d5c4be146100d8578063925477b7146100ef57806393e84cd914610106578063e1c7392a1461011d578063efbe1c1c14610134575b600080fd5b34801561009457600080fd5b5061009d61014b565b005b3480156100ab57600080fd5b506100b461015f565b604051808260058111156100c457fe5b60ff16815260200191505060405180910390f35b3480156100e457600080fd5b506100ed610175565b005b3480156100fb57600080fd5b506101046101a1565b005b34801561011257600080fd5b5061011b6101c5565b005b34801561012957600080fd5b506101326101e9565b005b34801561014057600080fd5b506101496101fd565b005b610153610229565b61015d60046102c7565b565b60008060009054906101000a900460ff16905090565b61017d6102ec565b61018561038b565b61018d61042a565b6101956104c9565b61019f60026102c7565b565b6101a96102ec565b6101b161042a565b6101b9610568565b6101c360056102c7565b565b6101cd6102ec565b6101d561042a565b6101dd610568565b6101e760036102c7565b565b6101f1610606565b6101fb60016102c7565b565b6102056102ec565b61020d61038b565b61021561042a565b61021d6104c9565b61022760006102c7565b565b6003600581111561023657fe5b6000809054906101000a900460ff16600581111561025057fe5b1415156102c5576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65206973206e6f7420706c6179696e670000000000000000000081525060200191505060405180910390fd5b565b806000806101000a81548160ff021916908360058111156102e457fe5b021790555050565b600060058111156102f957fe5b6000809054906101000a900460ff16600581111561031357fe5b14151515610389576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e65206973207475726e206f66660000000000000000000000000081525060200191505060405180910390fd5b565b6002600581111561039857fe5b6000809054906101000a900460ff1660058111156103b257fe5b14151515610428576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f6d616368696e65206973206c6f6164656400000000000000000000000000000081525060200191505060405180910390fd5b565b6003600581111561043757fe5b6000809054906101000a900460ff16600581111561045157fe5b141515156104c7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f6d616368696e6520697320706c6179696e67000000000000000000000000000081525060200191505060405180910390fd5b565b600460058111156104d657fe5b6000809054906101000a900460ff1660058111156104f057fe5b14151515610566576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f4d616368696e652069732053746f70656400000000000000000000000000000081525060200191505060405180910390fd5b565b60058081111561057457fe5b6000809054906101000a900460ff16600581111561058e57fe5b14151515610604576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f6d616368696e6520697320756e6c6f616465640000000000000000000000000081525060200191505060405180910390fd5b565b6000600581111561061357fe5b6000809054906101000a900460ff16600581111561062d57fe5b1415156106a2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6d616368696e65c397206973207475726e6564206f6e0000000000000000000081525060200191505060405180910390fd5b56fea165627a7a723058207b93dd840b3e2925c837ea3f69f8486669618ccf1161765350cba30f1e52597b0029",
+  "sourceMap": "24:1561:1:-;;;121:43;8:9:-1;5:2;;;30:1;27;20:12;5:2;121:43:1;153:8;145:5;;:16;;;;;;;;;;;;;;;;;;;;;;;;24:1561;;;;;;",
+  "deployedSourceMap": "24:1561:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1412:65;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1412:65:1;;;;;;230;;8:9:-1;5:2;;;30:1;27;20:12;5:2;230:65:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1207:111;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1207:111:1;;;;;;1480:102;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1480:102:1;;;;;;1321:89;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1321:89:1;;;;;;1148:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1148:56:1;;;;;;1050:96;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1050:96:1;;;;;;1412:65;1439:9;:7;:9::i;:::-;1451:23;1461:12;1451:9;:23::i;:::-;1412:65::o;230:::-;270:5;287;;;;;;;;;;;280:12;;230:65;:::o;1207:111::-;1236:4;:2;:4::i;:::-;1245:10;:8;:10::i;:::-;1260:11;:9;:11::i;:::-;1276:10;:8;:10::i;:::-;1291:23;1301:12;1291:9;:23::i;:::-;1207:111::o;1480:102::-;1511:4;:2;:4::i;:::-;1520:11;:9;:11::i;:::-;1536:12;:10;:12::i;:::-;1553:25;1563:14;1553:9;:25::i;:::-;1480:102::o;1321:89::-;1347:4;:2;:4::i;:::-;1354:11;:9;:11::i;:::-;1368:12;:10;:12::i;:::-;1383:24;1393:13;1383:9;:24::i;:::-;1321:89::o;1148:56::-;1174:5;:3;:5::i;:::-;1182:19;1192:8;1182:9;:19::i;:::-;1148:56::o;1050:96::-;1076:4;:2;:4::i;:::-;1083:10;:8;:10::i;:::-;1096:11;:9;:11::i;:::-;1110:10;:8;:10::i;:::-;1123:20;1133:9;1123;:20::i;:::-;1050:96::o;657:95::-;709:13;700:22;;;;;;;;:5;;;;;;;;;;;:22;;;;;;;;;692:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;657:95::o;166:62::-;219:6;211:5;;:14;;;;;;;;;;;;;;;;;;;;;;;;166:62;:::o;297:83::-;344:9;335:18;;;;;;;;:5;;;;;;;;;;;:18;;;;;;;;;;327:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:83::o;471:89::-;524:12;515:21;;;;;;;;:5;;;;;;;;;;;:21;;;;;;;;;;507:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;471:89::o;562:93::-;616:13;607:22;;;;;;;;:5;;;;;;;;;;;:22;;;;;;;;;;599:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;562:93::o;855:94::-;911:12;902:21;;;;;;;;:5;;;;;;;;;;;:21;;;;;;;;;;894:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;855:94::o;952:96::-;1007:14;998:23;;;;;;;;:5;;;;;;;;;;;:23;;;;;;;;;;990:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:96::o;382:87::-;430:9;421:18;;;;;;;;:5;;;;;;;;;;;:18;;;;;;;;;413:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:87::o",
+  "source": "pragma solidity 0.5.0;\n\ncontract StateMachine {\n\nenum State {off, on, loaded,  playing, stoped, unloaded}\n\nState state;\n\nconstructor() public\n{\n\tstate = State.on;\n}\n\nfunction _setState( State _state) private\n{\n\tstate = _state;\n}\n\nfunction getState() view public returns(State)\n{\n\treturn state;\n}\n\nfunction on() private view\n{\n\trequire(state != State.off, 'machine is turn off');\n}\n\nfunction off() private view\n{\n\trequire(state == State.off, 'machine× is turned on');\n}\n\nfunction noLoaded() private view\n{\n\trequire(state != State.loaded,'machine is loaded');\n}\n\nfunction noPlaying() private view\n{\n\trequire(state != State.playing, 'machine is playing');\n}\n\nfunction Playing() private view\n{\n\trequire(state == State.playing, 'machine is not playing');\n}\n\n function stoped() private view\n {\n   require(state == State.stoped, 'Machine is Not  Stoped');\n }\n\n function noStoped() private view\n {\n   require(state != State.stoped, 'Machine is Stoped');\n }\n\n function noUnloaded() private view\n{\n\trequire(state != State.unloaded, 'machine is unloaded');\n}\n\nfunction end() public \n{\n\ton();\n\tnoLoaded();\n\tnoPlaying();\n\tnoStoped();\n\t_setState(State.off);\n}\n\nfunction init() public\n{\n\toff();\n\t_setState(State.on);\n}\n\n function load() public\n {\n   on();\n   noLoaded();\n   noPlaying();\n   noStoped();\n   _setState(State.loaded);\n }\n \nfunction play() public\n{\n\ton();\n\tnoPlaying();\n\tnoUnloaded();\n\t_setState(State.playing);\n}\n\nfunction stop() public\n{\t\n\tPlaying();\n\t_setState(State.stoped);\n}\n\n function unload() public\n {\n   on();\n   noPlaying();\n   noUnloaded();\n   _setState(State.unloaded);\n }\n\n}\n",
   "sourcePath": "/root/state-machine/contracts/StateMachine.sol",
   "ast": {
     "absolutePath": "/root/state-machine/contracts/StateMachine.sol",
     "exportedSymbols": {
       "StateMachine": [
-        224
+        293
       ]
     },
-    "id": 225,
+    "id": 294,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -96,9 +116,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 224,
+        "id": 293,
         "linearizedBaseContracts": [
-          224
+          293
         ],
         "name": "StateMachine",
         "nodeType": "ContractDefinition",
@@ -153,7 +173,7 @@
             "id": 67,
             "name": "state",
             "nodeType": "VariableDeclaration",
-            "scope": 224,
+            "scope": 293,
             "src": "107:11:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -265,7 +285,7 @@
               "parameters": [],
               "src": "142:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "121:43:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -373,7 +393,7 @@
               "parameters": [],
               "src": "208:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "166:62:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -454,7 +474,7 @@
               ],
               "src": "269:7:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "230:65:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -565,10 +585,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "327:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -614,7 +634,7 @@
               "parameters": [],
               "src": "324:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "297:83:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -725,10 +745,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "413:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -774,7 +794,7 @@
               "parameters": [],
               "src": "410:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "382:87:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -885,10 +905,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "507:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -934,7 +954,7 @@
               "parameters": [],
               "src": "504:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "471:89:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -944,7 +964,7 @@
             "body": {
               "id": 141,
               "nodeType": "Block",
-              "src": "596:58:1",
+              "src": "596:59:1",
               "statements": [
                 {
                   "expression": {
@@ -1013,7 +1033,7 @@
                       },
                       {
                         "argumentTypes": null,
-                        "hexValue": "6d616368696e6520697320706c61696e67",
+                        "hexValue": "6d616368696e6520697320706c6179696e67",
                         "id": 138,
                         "isConstant": false,
                         "isLValue": false,
@@ -1021,13 +1041,13 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "631:19:1",
+                        "src": "631:20:1",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_2c0996a97c9d8de08237eb02e62b7d013e5dc6f603670ff280a93c73668ec29f",
-                          "typeString": "literal_string \"machine is plaing\""
+                          "typeIdentifier": "t_stringliteral_f7276ec5dd01ce4fffce392b5eb3ad00aa4b2c8bee4667bad15ac30b3985abbd",
+                          "typeString": "literal_string \"machine is playing\""
                         },
-                        "value": "machine is plaing"
+                        "value": "machine is playing"
                       }
                     ],
                     "expression": {
@@ -1037,18 +1057,18 @@
                           "typeString": "bool"
                         },
                         {
-                          "typeIdentifier": "t_stringliteral_2c0996a97c9d8de08237eb02e62b7d013e5dc6f603670ff280a93c73668ec29f",
-                          "typeString": "literal_string \"machine is plaing\""
+                          "typeIdentifier": "t_stringliteral_f7276ec5dd01ce4fffce392b5eb3ad00aa4b2c8bee4667bad15ac30b3985abbd",
+                          "typeString": "literal_string \"machine is playing\""
                         }
                       ],
                       "id": 133,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "599:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1063,7 +1083,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "599:52:1",
+                    "src": "599:53:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1071,7 +1091,7 @@
                   },
                   "id": 140,
                   "nodeType": "ExpressionStatement",
-                  "src": "599:52:1"
+                  "src": "599:53:1"
                 }
               ]
             },
@@ -1094,8 +1114,8 @@
               "parameters": [],
               "src": "596:0:1"
             },
-            "scope": 224,
-            "src": "562:92:1",
+            "scope": 293,
+            "src": "562:93:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "private"
@@ -1104,7 +1124,7 @@
             "body": {
               "id": 153,
               "nodeType": "Block",
-              "src": "688:63:1",
+              "src": "689:63:1",
               "statements": [
                 {
                   "expression": {
@@ -1128,7 +1148,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 67,
-                          "src": "699:5:1",
+                          "src": "700:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
@@ -1145,7 +1165,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 65,
-                            "src": "708:5:1",
+                            "src": "709:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                               "typeString": "type(enum StateMachine.State)"
@@ -1159,13 +1179,13 @@
                           "memberName": "playing",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "708:13:1",
+                          "src": "709:13:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
                           }
                         },
-                        "src": "699:22:1",
+                        "src": "700:22:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1181,7 +1201,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "723:24:1",
+                        "src": "724:24:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b714d5101bc874a965ae7af76c0ee7c7543213d9d1d85163d0c68d9cd6b3416e",
@@ -1205,11 +1225,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
-                      "src": "691:7:1",
+                      "referencedDeclaration": 312,
+                      "src": "692:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -1223,7 +1243,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "691:57:1",
+                    "src": "692:57:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1231,7 +1251,7 @@
                   },
                   "id": 152,
                   "nodeType": "ExpressionStatement",
-                  "src": "691:57:1"
+                  "src": "692:57:1"
                 }
               ]
             },
@@ -1246,16 +1266,16 @@
               "id": 143,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "672:2:1"
+              "src": "673:2:1"
             },
             "returnParameters": {
               "id": 144,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "688:0:1"
+              "src": "689:0:1"
             },
-            "scope": 224,
-            "src": "656:95:1",
+            "scope": 293,
+            "src": "657:95:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "private"
@@ -1264,7 +1284,7 @@
             "body": {
               "id": 165,
               "nodeType": "Block",
-              "src": "787:61:1",
+              "src": "787:65:1",
               "statements": [
                 {
                   "expression": {
@@ -1288,7 +1308,167 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 67,
-                          "src": "798:5:1",
+                          "src": "800:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 159,
+                            "name": "State",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 65,
+                            "src": "809:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                              "typeString": "type(enum StateMachine.State)"
+                            }
+                          },
+                          "id": 160,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "stoped",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "809:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "src": "800:21:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4d616368696e65206973204e6f74202053746f706564",
+                        "id": 162,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "823:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_956c87d47b73baf8e6797759bd4e42850abef4cd266c61d11b8287bb8677c5b3",
+                          "typeString": "literal_string \"Machine is Not  Stoped\""
+                        },
+                        "value": "Machine is Not  Stoped"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_956c87d47b73baf8e6797759bd4e42850abef4cd266c61d11b8287bb8677c5b3",
+                          "typeString": "literal_string \"Machine is Not  Stoped\""
+                        }
+                      ],
+                      "id": 157,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        311,
+                        312
+                      ],
+                      "referencedDeclaration": 312,
+                      "src": "792:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 163,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "792:56:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 164,
+                  "nodeType": "ExpressionStatement",
+                  "src": "792:56:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 166,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stoped",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 155,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "770:2:1"
+            },
+            "returnParameters": {
+              "id": 156,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "787:0:1"
+            },
+            "scope": 293,
+            "src": "755:97:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 177,
+              "nodeType": "Block",
+              "src": "889:60:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        },
+                        "id": 173,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 170,
+                          "name": "state",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 67,
+                          "src": "902:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
@@ -1300,18 +1480,178 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 159,
+                            "id": 171,
                             "name": "State",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 65,
-                            "src": "807:5:1",
+                            "src": "911:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                               "typeString": "type(enum StateMachine.State)"
                             }
                           },
-                          "id": 160,
+                          "id": 172,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "stoped",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "911:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "src": "902:21:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4d616368696e652069732053746f706564",
+                        "id": 174,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "925:19:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d273299e5d449c31d22781d1ebd4be8dd8842d3fe806ff4ba3f83e732c7faa90",
+                          "typeString": "literal_string \"Machine is Stoped\""
+                        },
+                        "value": "Machine is Stoped"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d273299e5d449c31d22781d1ebd4be8dd8842d3fe806ff4ba3f83e732c7faa90",
+                          "typeString": "literal_string \"Machine is Stoped\""
+                        }
+                      ],
+                      "id": 169,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        311,
+                        312
+                      ],
+                      "referencedDeclaration": 312,
+                      "src": "894:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 175,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "894:51:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 176,
+                  "nodeType": "ExpressionStatement",
+                  "src": "894:51:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 178,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "noStoped",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 167,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "872:2:1"
+            },
+            "returnParameters": {
+              "id": 168,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "889:0:1"
+            },
+            "scope": 293,
+            "src": "855:94:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 189,
+              "nodeType": "Block",
+              "src": "987:61:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        },
+                        "id": 185,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 182,
+                          "name": "state",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 67,
+                          "src": "998:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 183,
+                            "name": "State",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 65,
+                            "src": "1007:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                              "typeString": "type(enum StateMachine.State)"
+                            }
+                          },
+                          "id": 184,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1319,13 +1659,13 @@
                           "memberName": "unloaded",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "807:14:1",
+                          "src": "1007:14:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
                           }
                         },
-                        "src": "798:23:1",
+                        "src": "998:23:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1334,14 +1674,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6d616368696e6520697320756e6c6f61646564",
-                        "id": 162,
+                        "id": 186,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "823:21:1",
+                        "src": "1023:21:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_fe0a44903cf24b320899794ee8670dbb7e06a9ff884070a35799a54379ac245e",
@@ -1361,21 +1701,21 @@
                           "typeString": "literal_string \"machine is unloaded\""
                         }
                       ],
-                      "id": 157,
+                      "id": 181,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
-                      "src": "790:7:1",
+                      "referencedDeclaration": 312,
+                      "src": "990:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 163,
+                    "id": 187,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1383,48 +1723,48 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "790:55:1",
+                    "src": "990:55:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 164,
+                  "id": 188,
                   "nodeType": "ExpressionStatement",
-                  "src": "790:55:1"
+                  "src": "990:55:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 166,
+            "id": 190,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "noUnloaded",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 155,
+              "id": 179,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "771:2:1"
+              "src": "971:2:1"
             },
             "returnParameters": {
-              "id": 156,
+              "id": 180,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "787:0:1"
+              "src": "987:0:1"
             },
-            "scope": 224,
-            "src": "752:96:1",
+            "scope": 293,
+            "src": "952:96:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "private"
           },
           {
             "body": {
-              "id": 180,
+              "id": 210,
               "nodeType": "Block",
-              "src": "873:47:1",
+              "src": "1073:73:1",
               "statements": [
                 {
                   "expression": {
@@ -1432,18 +1772,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 169,
+                      "id": 193,
                       "name": "on",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 106,
-                      "src": "876:2:1",
+                      "src": "1076:2:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
                       }
                     },
-                    "id": 170,
+                    "id": 194,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1451,292 +1791,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "876:4:1",
+                    "src": "1076:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 171,
+                  "id": 195,
                   "nodeType": "ExpressionStatement",
-                  "src": "876:4:1"
+                  "src": "1076:4:1"
                 },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "id": 172,
-                      "name": "noPlaying",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 142,
-                      "src": "883:9:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
-                        "typeString": "function () view"
-                      }
-                    },
-                    "id": 173,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "883:11:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 174,
-                  "nodeType": "ExpressionStatement",
-                  "src": "883:11:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 176,
-                          "name": "State",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 65,
-                          "src": "907:5:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
-                            "typeString": "type(enum StateMachine.State)"
-                          }
-                        },
-                        "id": 177,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "memberName": "off",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "907:9:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      ],
-                      "id": 175,
-                      "name": "_setState",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 86,
-                      "src": "897:9:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
-                        "typeString": "function (enum StateMachine.State)"
-                      }
-                    },
-                    "id": 178,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "897:20:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 179,
-                  "nodeType": "ExpressionStatement",
-                  "src": "897:20:1"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 181,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "end",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 167,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "862:2:1"
-            },
-            "returnParameters": {
-              "id": 168,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "873:0:1"
-            },
-            "scope": 224,
-            "src": "850:70:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 192,
-              "nodeType": "Block",
-              "src": "945:33:1",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "id": 184,
-                      "name": "off",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 118,
-                      "src": "948:3:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
-                        "typeString": "function () view"
-                      }
-                    },
-                    "id": 185,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "948:5:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 186,
-                  "nodeType": "ExpressionStatement",
-                  "src": "948:5:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 188,
-                          "name": "State",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 65,
-                          "src": "966:5:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
-                            "typeString": "type(enum StateMachine.State)"
-                          }
-                        },
-                        "id": 189,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "memberName": "on",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "966:8:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      ],
-                      "id": 187,
-                      "name": "_setState",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 86,
-                      "src": "956:9:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
-                        "typeString": "function (enum StateMachine.State)"
-                      }
-                    },
-                    "id": 190,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "956:19:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 191,
-                  "nodeType": "ExpressionStatement",
-                  "src": "956:19:1"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 193,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "init",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 182,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "935:2:1"
-            },
-            "returnParameters": {
-              "id": 183,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "945:0:1"
-            },
-            "scope": 224,
-            "src": "922:56:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 210,
-              "nodeType": "Block",
-              "src": "1003:66:1",
-              "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -1744,11 +1808,11 @@
                     "expression": {
                       "argumentTypes": [],
                       "id": 196,
-                      "name": "on",
+                      "name": "noLoaded",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 106,
-                      "src": "1006:2:1",
+                      "referencedDeclaration": 130,
+                      "src": "1083:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -1762,7 +1826,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1006:4:1",
+                    "src": "1083:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1770,7 +1834,7 @@
                   },
                   "id": 198,
                   "nodeType": "ExpressionStatement",
-                  "src": "1006:4:1"
+                  "src": "1083:10:1"
                 },
                 {
                   "expression": {
@@ -1783,7 +1847,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 142,
-                      "src": "1013:9:1",
+                      "src": "1096:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -1797,7 +1861,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1013:11:1",
+                    "src": "1096:11:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1805,7 +1869,7 @@
                   },
                   "id": 201,
                   "nodeType": "ExpressionStatement",
-                  "src": "1013:11:1"
+                  "src": "1096:11:1"
                 },
                 {
                   "expression": {
@@ -1814,11 +1878,11 @@
                     "expression": {
                       "argumentTypes": [],
                       "id": 202,
-                      "name": "noUnloaded",
+                      "name": "noStoped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 166,
-                      "src": "1027:10:1",
+                      "referencedDeclaration": 178,
+                      "src": "1110:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -1832,7 +1896,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1027:12:1",
+                    "src": "1110:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1840,7 +1904,7 @@
                   },
                   "id": 204,
                   "nodeType": "ExpressionStatement",
-                  "src": "1027:12:1"
+                  "src": "1110:10:1"
                 },
                 {
                   "expression": {
@@ -1855,7 +1919,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 65,
-                          "src": "1052:5:1",
+                          "src": "1133:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                             "typeString": "type(enum StateMachine.State)"
@@ -1866,10 +1930,10 @@
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
-                        "memberName": "playing",
+                        "memberName": "off",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1052:13:1",
+                        "src": "1133:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_State_$65",
                           "typeString": "enum StateMachine.State"
@@ -1888,7 +1952,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 86,
-                      "src": "1042:9:1",
+                      "src": "1123:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
                         "typeString": "function (enum StateMachine.State)"
@@ -1902,7 +1966,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1042:24:1",
+                    "src": "1123:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1910,7 +1974,7 @@
                   },
                   "id": 209,
                   "nodeType": "ExpressionStatement",
-                  "src": "1042:24:1"
+                  "src": "1123:20:1"
                 }
               ]
             },
@@ -1919,22 +1983,22 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "play",
+            "name": "end",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 194,
+              "id": 191,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "993:2:1"
+              "src": "1062:2:1"
             },
             "returnParameters": {
-              "id": 195,
+              "id": 192,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1003:0:1"
+              "src": "1073:0:1"
             },
-            "scope": 224,
-            "src": "980:89:1",
+            "scope": 293,
+            "src": "1050:96:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -1943,7 +2007,7 @@
             "body": {
               "id": 222,
               "nodeType": "Block",
-              "src": "1094:44:1",
+              "src": "1171:33:1",
               "statements": [
                 {
                   "expression": {
@@ -1952,11 +2016,11 @@
                     "expression": {
                       "argumentTypes": [],
                       "id": 214,
-                      "name": "Playing",
+                      "name": "off",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 154,
-                      "src": "1099:7:1",
+                      "referencedDeclaration": 118,
+                      "src": "1174:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -1970,7 +2034,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1099:9:1",
+                    "src": "1174:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1978,7 +2042,7 @@
                   },
                   "id": 216,
                   "nodeType": "ExpressionStatement",
-                  "src": "1099:9:1"
+                  "src": "1174:5:1"
                 },
                 {
                   "expression": {
@@ -1993,7 +2057,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 65,
-                          "src": "1121:5:1",
+                          "src": "1192:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                             "typeString": "type(enum StateMachine.State)"
@@ -2004,10 +2068,10 @@
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
-                        "memberName": "stoped",
+                        "memberName": "on",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1121:12:1",
+                        "src": "1192:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_State_$65",
                           "typeString": "enum StateMachine.State"
@@ -2026,7 +2090,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 86,
-                      "src": "1111:9:1",
+                      "src": "1182:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
                         "typeString": "function (enum StateMachine.State)"
@@ -2040,7 +2104,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1111:23:1",
+                    "src": "1182:19:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2048,7 +2112,7 @@
                   },
                   "id": 221,
                   "nodeType": "ExpressionStatement",
-                  "src": "1111:23:1"
+                  "src": "1182:19:1"
                 }
               ]
             },
@@ -2057,41 +2121,838 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "stop",
+            "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 212,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1084:2:1"
+              "src": "1161:2:1"
             },
             "returnParameters": {
               "id": 213,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1094:0:1"
+              "src": "1171:0:1"
             },
-            "scope": 224,
-            "src": "1071:67:1",
+            "scope": 293,
+            "src": "1148:56:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 243,
+              "nodeType": "Block",
+              "src": "1231:87:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 226,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 106,
+                      "src": "1236:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 227,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1236:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 228,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1236:4:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 229,
+                      "name": "noLoaded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 130,
+                      "src": "1245:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 230,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1245:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 231,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1245:10:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 232,
+                      "name": "noPlaying",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 142,
+                      "src": "1260:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 233,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1260:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 234,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1260:11:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 235,
+                      "name": "noStoped",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 178,
+                      "src": "1276:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 236,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1276:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 237,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1276:10:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 239,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1301:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 240,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "loaded",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1301:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 238,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1291:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 241,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1291:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 242,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1291:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 244,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "load",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 224,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1220:2:1"
+            },
+            "returnParameters": {
+              "id": 225,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1231:0:1"
+            },
+            "scope": 293,
+            "src": "1207:111:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 261,
+              "nodeType": "Block",
+              "src": "1344:66:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 247,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 106,
+                      "src": "1347:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 248,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1347:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 249,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1347:4:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 250,
+                      "name": "noPlaying",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 142,
+                      "src": "1354:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 251,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1354:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 252,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1354:11:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 253,
+                      "name": "noUnloaded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 190,
+                      "src": "1368:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 254,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1368:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 255,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1368:12:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 257,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1393:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 258,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "playing",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1393:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 256,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1383:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1383:24:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 260,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1383:24:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 262,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "play",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 245,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1334:2:1"
+            },
+            "returnParameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1344:0:1"
+            },
+            "scope": 293,
+            "src": "1321:89:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 273,
+              "nodeType": "Block",
+              "src": "1435:42:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 265,
+                      "name": "Playing",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 154,
+                      "src": "1439:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 266,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1439:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 267,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1439:9:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 269,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1461:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 270,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "stoped",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1461:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 268,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1451:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 271,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1451:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 272,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1451:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 274,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stop",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 263,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1425:2:1"
+            },
+            "returnParameters": {
+              "id": 264,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1435:0:1"
+            },
+            "scope": 293,
+            "src": "1412:65:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 291,
+              "nodeType": "Block",
+              "src": "1506:76:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 277,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 106,
+                      "src": "1511:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 278,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1511:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 279,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1511:4:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 280,
+                      "name": "noPlaying",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 142,
+                      "src": "1520:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 281,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1520:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 282,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1520:11:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 283,
+                      "name": "noUnloaded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 190,
+                      "src": "1536:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 284,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1536:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 285,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1536:12:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 287,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1563:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 288,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "unloaded",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1563:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 286,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1553:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1553:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 290,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1553:25:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 292,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unload",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 275,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1495:2:1"
+            },
+            "returnParameters": {
+              "id": 276,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1506:0:1"
+            },
+            "scope": 293,
+            "src": "1480:102:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 225,
-        "src": "24:1118:1"
+        "scope": 294,
+        "src": "24:1561:1"
       }
     ],
-    "src": "0:1143:1"
+    "src": "0:1586:1"
   },
   "legacyAST": {
     "absolutePath": "/root/state-machine/contracts/StateMachine.sol",
     "exportedSymbols": {
       "StateMachine": [
-        224
+        293
       ]
     },
-    "id": 225,
+    "id": 294,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -2110,9 +2971,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 224,
+        "id": 293,
         "linearizedBaseContracts": [
-          224
+          293
         ],
         "name": "StateMachine",
         "nodeType": "ContractDefinition",
@@ -2167,7 +3028,7 @@
             "id": 67,
             "name": "state",
             "nodeType": "VariableDeclaration",
-            "scope": 224,
+            "scope": 293,
             "src": "107:11:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2279,7 +3140,7 @@
               "parameters": [],
               "src": "142:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "121:43:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2387,7 +3248,7 @@
               "parameters": [],
               "src": "208:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "166:62:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2468,7 +3329,7 @@
               ],
               "src": "269:7:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "230:65:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -2579,10 +3440,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "327:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2628,7 +3489,7 @@
               "parameters": [],
               "src": "324:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "297:83:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -2739,10 +3600,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "413:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2788,7 +3649,7 @@
               "parameters": [],
               "src": "410:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "382:87:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -2899,10 +3760,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "507:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2948,7 +3809,7 @@
               "parameters": [],
               "src": "504:0:1"
             },
-            "scope": 224,
+            "scope": 293,
             "src": "471:89:1",
             "stateMutability": "view",
             "superFunction": null,
@@ -2958,7 +3819,7 @@
             "body": {
               "id": 141,
               "nodeType": "Block",
-              "src": "596:58:1",
+              "src": "596:59:1",
               "statements": [
                 {
                   "expression": {
@@ -3027,7 +3888,7 @@
                       },
                       {
                         "argumentTypes": null,
-                        "hexValue": "6d616368696e6520697320706c61696e67",
+                        "hexValue": "6d616368696e6520697320706c6179696e67",
                         "id": 138,
                         "isConstant": false,
                         "isLValue": false,
@@ -3035,13 +3896,13 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "631:19:1",
+                        "src": "631:20:1",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_2c0996a97c9d8de08237eb02e62b7d013e5dc6f603670ff280a93c73668ec29f",
-                          "typeString": "literal_string \"machine is plaing\""
+                          "typeIdentifier": "t_stringliteral_f7276ec5dd01ce4fffce392b5eb3ad00aa4b2c8bee4667bad15ac30b3985abbd",
+                          "typeString": "literal_string \"machine is playing\""
                         },
-                        "value": "machine is plaing"
+                        "value": "machine is playing"
                       }
                     ],
                     "expression": {
@@ -3051,18 +3912,18 @@
                           "typeString": "bool"
                         },
                         {
-                          "typeIdentifier": "t_stringliteral_2c0996a97c9d8de08237eb02e62b7d013e5dc6f603670ff280a93c73668ec29f",
-                          "typeString": "literal_string \"machine is plaing\""
+                          "typeIdentifier": "t_stringliteral_f7276ec5dd01ce4fffce392b5eb3ad00aa4b2c8bee4667bad15ac30b3985abbd",
+                          "typeString": "literal_string \"machine is playing\""
                         }
                       ],
                       "id": 133,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
+                      "referencedDeclaration": 312,
                       "src": "599:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3077,7 +3938,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "599:52:1",
+                    "src": "599:53:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3085,7 +3946,7 @@
                   },
                   "id": 140,
                   "nodeType": "ExpressionStatement",
-                  "src": "599:52:1"
+                  "src": "599:53:1"
                 }
               ]
             },
@@ -3108,8 +3969,8 @@
               "parameters": [],
               "src": "596:0:1"
             },
-            "scope": 224,
-            "src": "562:92:1",
+            "scope": 293,
+            "src": "562:93:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "private"
@@ -3118,7 +3979,7 @@
             "body": {
               "id": 153,
               "nodeType": "Block",
-              "src": "688:63:1",
+              "src": "689:63:1",
               "statements": [
                 {
                   "expression": {
@@ -3142,7 +4003,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 67,
-                          "src": "699:5:1",
+                          "src": "700:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
@@ -3159,7 +4020,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 65,
-                            "src": "708:5:1",
+                            "src": "709:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                               "typeString": "type(enum StateMachine.State)"
@@ -3173,13 +4034,13 @@
                           "memberName": "playing",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "708:13:1",
+                          "src": "709:13:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
                           }
                         },
-                        "src": "699:22:1",
+                        "src": "700:22:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3195,7 +4056,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "723:24:1",
+                        "src": "724:24:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b714d5101bc874a965ae7af76c0ee7c7543213d9d1d85163d0c68d9cd6b3416e",
@@ -3219,11 +4080,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
-                      "src": "691:7:1",
+                      "referencedDeclaration": 312,
+                      "src": "692:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -3237,7 +4098,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "691:57:1",
+                    "src": "692:57:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3245,7 +4106,7 @@
                   },
                   "id": 152,
                   "nodeType": "ExpressionStatement",
-                  "src": "691:57:1"
+                  "src": "692:57:1"
                 }
               ]
             },
@@ -3260,16 +4121,16 @@
               "id": 143,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "672:2:1"
+              "src": "673:2:1"
             },
             "returnParameters": {
               "id": 144,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "688:0:1"
+              "src": "689:0:1"
             },
-            "scope": 224,
-            "src": "656:95:1",
+            "scope": 293,
+            "src": "657:95:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "private"
@@ -3278,7 +4139,7 @@
             "body": {
               "id": 165,
               "nodeType": "Block",
-              "src": "787:61:1",
+              "src": "787:65:1",
               "statements": [
                 {
                   "expression": {
@@ -3302,7 +4163,167 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 67,
-                          "src": "798:5:1",
+                          "src": "800:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 159,
+                            "name": "State",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 65,
+                            "src": "809:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                              "typeString": "type(enum StateMachine.State)"
+                            }
+                          },
+                          "id": 160,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "stoped",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "809:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "src": "800:21:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4d616368696e65206973204e6f74202053746f706564",
+                        "id": 162,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "823:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_956c87d47b73baf8e6797759bd4e42850abef4cd266c61d11b8287bb8677c5b3",
+                          "typeString": "literal_string \"Machine is Not  Stoped\""
+                        },
+                        "value": "Machine is Not  Stoped"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_956c87d47b73baf8e6797759bd4e42850abef4cd266c61d11b8287bb8677c5b3",
+                          "typeString": "literal_string \"Machine is Not  Stoped\""
+                        }
+                      ],
+                      "id": 157,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        311,
+                        312
+                      ],
+                      "referencedDeclaration": 312,
+                      "src": "792:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 163,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "792:56:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 164,
+                  "nodeType": "ExpressionStatement",
+                  "src": "792:56:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 166,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stoped",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 155,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "770:2:1"
+            },
+            "returnParameters": {
+              "id": 156,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "787:0:1"
+            },
+            "scope": 293,
+            "src": "755:97:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 177,
+              "nodeType": "Block",
+              "src": "889:60:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        },
+                        "id": 173,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 170,
+                          "name": "state",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 67,
+                          "src": "902:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
@@ -3314,18 +4335,178 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 159,
+                            "id": 171,
                             "name": "State",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 65,
-                            "src": "807:5:1",
+                            "src": "911:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                               "typeString": "type(enum StateMachine.State)"
                             }
                           },
-                          "id": 160,
+                          "id": 172,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "stoped",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "911:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "src": "902:21:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4d616368696e652069732053746f706564",
+                        "id": 174,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "925:19:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_d273299e5d449c31d22781d1ebd4be8dd8842d3fe806ff4ba3f83e732c7faa90",
+                          "typeString": "literal_string \"Machine is Stoped\""
+                        },
+                        "value": "Machine is Stoped"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_d273299e5d449c31d22781d1ebd4be8dd8842d3fe806ff4ba3f83e732c7faa90",
+                          "typeString": "literal_string \"Machine is Stoped\""
+                        }
+                      ],
+                      "id": 169,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        311,
+                        312
+                      ],
+                      "referencedDeclaration": 312,
+                      "src": "894:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 175,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "894:51:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 176,
+                  "nodeType": "ExpressionStatement",
+                  "src": "894:51:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 178,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "noStoped",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 167,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "872:2:1"
+            },
+            "returnParameters": {
+              "id": 168,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "889:0:1"
+            },
+            "scope": 293,
+            "src": "855:94:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 189,
+              "nodeType": "Block",
+              "src": "987:61:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        },
+                        "id": 185,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 182,
+                          "name": "state",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 67,
+                          "src": "998:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$65",
+                            "typeString": "enum StateMachine.State"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 183,
+                            "name": "State",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 65,
+                            "src": "1007:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                              "typeString": "type(enum StateMachine.State)"
+                            }
+                          },
+                          "id": 184,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3333,13 +4514,13 @@
                           "memberName": "unloaded",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "807:14:1",
+                          "src": "1007:14:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_State_$65",
                             "typeString": "enum StateMachine.State"
                           }
                         },
-                        "src": "798:23:1",
+                        "src": "998:23:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3348,14 +4529,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "6d616368696e6520697320756e6c6f61646564",
-                        "id": 162,
+                        "id": 186,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "823:21:1",
+                        "src": "1023:21:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_fe0a44903cf24b320899794ee8670dbb7e06a9ff884070a35799a54379ac245e",
@@ -3375,21 +4556,21 @@
                           "typeString": "literal_string \"machine is unloaded\""
                         }
                       ],
-                      "id": 157,
+                      "id": 181,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        242,
-                        243
+                        311,
+                        312
                       ],
-                      "referencedDeclaration": 243,
-                      "src": "790:7:1",
+                      "referencedDeclaration": 312,
+                      "src": "990:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 163,
+                    "id": 187,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3397,48 +4578,48 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "790:55:1",
+                    "src": "990:55:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 164,
+                  "id": 188,
                   "nodeType": "ExpressionStatement",
-                  "src": "790:55:1"
+                  "src": "990:55:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 166,
+            "id": 190,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "noUnloaded",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 155,
+              "id": 179,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "771:2:1"
+              "src": "971:2:1"
             },
             "returnParameters": {
-              "id": 156,
+              "id": 180,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "787:0:1"
+              "src": "987:0:1"
             },
-            "scope": 224,
-            "src": "752:96:1",
+            "scope": 293,
+            "src": "952:96:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "private"
           },
           {
             "body": {
-              "id": 180,
+              "id": 210,
               "nodeType": "Block",
-              "src": "873:47:1",
+              "src": "1073:73:1",
               "statements": [
                 {
                   "expression": {
@@ -3446,18 +4627,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 169,
+                      "id": 193,
                       "name": "on",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 106,
-                      "src": "876:2:1",
+                      "src": "1076:2:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
                       }
                     },
-                    "id": 170,
+                    "id": 194,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3465,292 +4646,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "876:4:1",
+                    "src": "1076:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 171,
+                  "id": 195,
                   "nodeType": "ExpressionStatement",
-                  "src": "876:4:1"
+                  "src": "1076:4:1"
                 },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "id": 172,
-                      "name": "noPlaying",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 142,
-                      "src": "883:9:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
-                        "typeString": "function () view"
-                      }
-                    },
-                    "id": 173,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "883:11:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 174,
-                  "nodeType": "ExpressionStatement",
-                  "src": "883:11:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 176,
-                          "name": "State",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 65,
-                          "src": "907:5:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
-                            "typeString": "type(enum StateMachine.State)"
-                          }
-                        },
-                        "id": 177,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "memberName": "off",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "907:9:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      ],
-                      "id": 175,
-                      "name": "_setState",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 86,
-                      "src": "897:9:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
-                        "typeString": "function (enum StateMachine.State)"
-                      }
-                    },
-                    "id": 178,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "897:20:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 179,
-                  "nodeType": "ExpressionStatement",
-                  "src": "897:20:1"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 181,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "end",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 167,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "862:2:1"
-            },
-            "returnParameters": {
-              "id": 168,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "873:0:1"
-            },
-            "scope": 224,
-            "src": "850:70:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 192,
-              "nodeType": "Block",
-              "src": "945:33:1",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "id": 184,
-                      "name": "off",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 118,
-                      "src": "948:3:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
-                        "typeString": "function () view"
-                      }
-                    },
-                    "id": 185,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "948:5:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 186,
-                  "nodeType": "ExpressionStatement",
-                  "src": "948:5:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 188,
-                          "name": "State",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 65,
-                          "src": "966:5:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
-                            "typeString": "type(enum StateMachine.State)"
-                          }
-                        },
-                        "id": 189,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "memberName": "on",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "966:8:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_enum$_State_$65",
-                          "typeString": "enum StateMachine.State"
-                        }
-                      ],
-                      "id": 187,
-                      "name": "_setState",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 86,
-                      "src": "956:9:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
-                        "typeString": "function (enum StateMachine.State)"
-                      }
-                    },
-                    "id": 190,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "956:19:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 191,
-                  "nodeType": "ExpressionStatement",
-                  "src": "956:19:1"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 193,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "init",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 182,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "935:2:1"
-            },
-            "returnParameters": {
-              "id": 183,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "945:0:1"
-            },
-            "scope": 224,
-            "src": "922:56:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 210,
-              "nodeType": "Block",
-              "src": "1003:66:1",
-              "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -3758,11 +4663,11 @@
                     "expression": {
                       "argumentTypes": [],
                       "id": 196,
-                      "name": "on",
+                      "name": "noLoaded",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 106,
-                      "src": "1006:2:1",
+                      "referencedDeclaration": 130,
+                      "src": "1083:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -3776,7 +4681,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1006:4:1",
+                    "src": "1083:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3784,7 +4689,7 @@
                   },
                   "id": 198,
                   "nodeType": "ExpressionStatement",
-                  "src": "1006:4:1"
+                  "src": "1083:10:1"
                 },
                 {
                   "expression": {
@@ -3797,7 +4702,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 142,
-                      "src": "1013:9:1",
+                      "src": "1096:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -3811,7 +4716,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1013:11:1",
+                    "src": "1096:11:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3819,7 +4724,7 @@
                   },
                   "id": 201,
                   "nodeType": "ExpressionStatement",
-                  "src": "1013:11:1"
+                  "src": "1096:11:1"
                 },
                 {
                   "expression": {
@@ -3828,11 +4733,11 @@
                     "expression": {
                       "argumentTypes": [],
                       "id": 202,
-                      "name": "noUnloaded",
+                      "name": "noStoped",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 166,
-                      "src": "1027:10:1",
+                      "referencedDeclaration": 178,
+                      "src": "1110:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -3846,7 +4751,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1027:12:1",
+                    "src": "1110:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3854,7 +4759,7 @@
                   },
                   "id": 204,
                   "nodeType": "ExpressionStatement",
-                  "src": "1027:12:1"
+                  "src": "1110:10:1"
                 },
                 {
                   "expression": {
@@ -3869,7 +4774,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 65,
-                          "src": "1052:5:1",
+                          "src": "1133:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                             "typeString": "type(enum StateMachine.State)"
@@ -3880,10 +4785,10 @@
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
-                        "memberName": "playing",
+                        "memberName": "off",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1052:13:1",
+                        "src": "1133:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_State_$65",
                           "typeString": "enum StateMachine.State"
@@ -3902,7 +4807,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 86,
-                      "src": "1042:9:1",
+                      "src": "1123:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
                         "typeString": "function (enum StateMachine.State)"
@@ -3916,7 +4821,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1042:24:1",
+                    "src": "1123:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3924,7 +4829,7 @@
                   },
                   "id": 209,
                   "nodeType": "ExpressionStatement",
-                  "src": "1042:24:1"
+                  "src": "1123:20:1"
                 }
               ]
             },
@@ -3933,22 +4838,22 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "play",
+            "name": "end",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 194,
+              "id": 191,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "993:2:1"
+              "src": "1062:2:1"
             },
             "returnParameters": {
-              "id": 195,
+              "id": 192,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1003:0:1"
+              "src": "1073:0:1"
             },
-            "scope": 224,
-            "src": "980:89:1",
+            "scope": 293,
+            "src": "1050:96:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -3957,7 +4862,7 @@
             "body": {
               "id": 222,
               "nodeType": "Block",
-              "src": "1094:44:1",
+              "src": "1171:33:1",
               "statements": [
                 {
                   "expression": {
@@ -3966,11 +4871,11 @@
                     "expression": {
                       "argumentTypes": [],
                       "id": 214,
-                      "name": "Playing",
+                      "name": "off",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 154,
-                      "src": "1099:7:1",
+                      "referencedDeclaration": 118,
+                      "src": "1174:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$__$",
                         "typeString": "function () view"
@@ -3984,7 +4889,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1099:9:1",
+                    "src": "1174:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3992,7 +4897,7 @@
                   },
                   "id": 216,
                   "nodeType": "ExpressionStatement",
-                  "src": "1099:9:1"
+                  "src": "1174:5:1"
                 },
                 {
                   "expression": {
@@ -4007,7 +4912,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 65,
-                          "src": "1121:5:1",
+                          "src": "1192:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_State_$65_$",
                             "typeString": "type(enum StateMachine.State)"
@@ -4018,10 +4923,10 @@
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
-                        "memberName": "stoped",
+                        "memberName": "on",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1121:12:1",
+                        "src": "1192:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_State_$65",
                           "typeString": "enum StateMachine.State"
@@ -4040,7 +4945,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 86,
-                      "src": "1111:9:1",
+                      "src": "1182:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
                         "typeString": "function (enum StateMachine.State)"
@@ -4054,7 +4959,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1111:23:1",
+                    "src": "1182:19:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -4062,7 +4967,7 @@
                   },
                   "id": 221,
                   "nodeType": "ExpressionStatement",
-                  "src": "1111:23:1"
+                  "src": "1182:19:1"
                 }
               ]
             },
@@ -4071,32 +4976,829 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "stop",
+            "name": "init",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 212,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1084:2:1"
+              "src": "1161:2:1"
             },
             "returnParameters": {
               "id": 213,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1094:0:1"
+              "src": "1171:0:1"
             },
-            "scope": 224,
-            "src": "1071:67:1",
+            "scope": 293,
+            "src": "1148:56:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 243,
+              "nodeType": "Block",
+              "src": "1231:87:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 226,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 106,
+                      "src": "1236:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 227,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1236:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 228,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1236:4:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 229,
+                      "name": "noLoaded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 130,
+                      "src": "1245:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 230,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1245:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 231,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1245:10:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 232,
+                      "name": "noPlaying",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 142,
+                      "src": "1260:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 233,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1260:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 234,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1260:11:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 235,
+                      "name": "noStoped",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 178,
+                      "src": "1276:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 236,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1276:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 237,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1276:10:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 239,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1301:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 240,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "loaded",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1301:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 238,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1291:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 241,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1291:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 242,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1291:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 244,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "load",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 224,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1220:2:1"
+            },
+            "returnParameters": {
+              "id": 225,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1231:0:1"
+            },
+            "scope": 293,
+            "src": "1207:111:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 261,
+              "nodeType": "Block",
+              "src": "1344:66:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 247,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 106,
+                      "src": "1347:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 248,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1347:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 249,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1347:4:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 250,
+                      "name": "noPlaying",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 142,
+                      "src": "1354:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 251,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1354:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 252,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1354:11:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 253,
+                      "name": "noUnloaded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 190,
+                      "src": "1368:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 254,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1368:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 255,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1368:12:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 257,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1393:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 258,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "playing",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1393:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 256,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1383:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1383:24:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 260,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1383:24:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 262,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "play",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 245,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1334:2:1"
+            },
+            "returnParameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1344:0:1"
+            },
+            "scope": 293,
+            "src": "1321:89:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 273,
+              "nodeType": "Block",
+              "src": "1435:42:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 265,
+                      "name": "Playing",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 154,
+                      "src": "1439:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 266,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1439:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 267,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1439:9:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 269,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1461:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 270,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "stoped",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1461:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 268,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1451:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 271,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1451:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 272,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1451:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 274,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stop",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 263,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1425:2:1"
+            },
+            "returnParameters": {
+              "id": 264,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1435:0:1"
+            },
+            "scope": 293,
+            "src": "1412:65:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 291,
+              "nodeType": "Block",
+              "src": "1506:76:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 277,
+                      "name": "on",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 106,
+                      "src": "1511:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 278,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1511:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 279,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1511:4:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 280,
+                      "name": "noPlaying",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 142,
+                      "src": "1520:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 281,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1520:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 282,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1520:11:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 283,
+                      "name": "noUnloaded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 190,
+                      "src": "1536:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 284,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1536:12:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 285,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1536:12:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 287,
+                          "name": "State",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 65,
+                          "src": "1563:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_enum$_State_$65_$",
+                            "typeString": "type(enum StateMachine.State)"
+                          }
+                        },
+                        "id": 288,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "unloaded",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1563:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_State_$65",
+                          "typeString": "enum StateMachine.State"
+                        }
+                      ],
+                      "id": 286,
+                      "name": "_setState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 86,
+                      "src": "1553:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_enum$_State_$65_$returns$__$",
+                        "typeString": "function (enum StateMachine.State)"
+                      }
+                    },
+                    "id": 289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1553:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 290,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1553:25:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 292,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unload",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 275,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1495:2:1"
+            },
+            "returnParameters": {
+              "id": 276,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1506:0:1"
+            },
+            "scope": 293,
+            "src": "1480:102:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 225,
-        "src": "24:1118:1"
+        "scope": 294,
+        "src": "24:1561:1"
       }
     ],
-    "src": "0:1143:1"
+    "src": "0:1586:1"
   },
   "compiler": {
     "name": "solc",
@@ -4106,12 +5808,12 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0x10914F3197c9368A383e171723F61FD6E25d643E",
-      "transactionHash": "0xa116e8243f4d1eb6aeeee714a7dea10c8dae51da16492ade9f929963485d73eb"
+      "address": "0x5A9536a52A61A0AAF60880F391999BAF57381a0B",
+      "transactionHash": "0x9b333c09c306bc5424b94012370051237458f8ca4926bb1152cb73aa0b9601b6"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-10T11:47:24.350Z",
+  "updatedAt": "2019-01-10T23:32:40.891Z",
   "devdoc": {
     "methods": {}
   },

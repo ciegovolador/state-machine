@@ -38,14 +38,25 @@ function noLoaded() private view
 
 function noPlaying() private view
 {
-	require(state != State.playing, 'machine is plaing');
+	require(state != State.playing, 'machine is playing');
 }
 
 function Playing() private view
 {
 	require(state == State.playing, 'machine is not playing');
 }
-function noUnloaded() private view
+
+ function stoped() private view
+ {
+   require(state == State.stoped, 'Machine is Not  Stoped');
+ }
+
+ function noStoped() private view
+ {
+   require(state != State.stoped, 'Machine is Stoped');
+ }
+
+ function noUnloaded() private view
 {
 	require(state != State.unloaded, 'machine is unloaded');
 }
@@ -53,7 +64,9 @@ function noUnloaded() private view
 function end() public 
 {
 	on();
+	noLoaded();
 	noPlaying();
+	noStoped();
 	_setState(State.off);
 }
 
@@ -63,6 +76,15 @@ function init() public
 	_setState(State.on);
 }
 
+ function load() public
+ {
+   on();
+   noLoaded();
+   noPlaying();
+   noStoped();
+   _setState(State.loaded);
+ }
+ 
 function play() public
 {
 	on();
@@ -72,12 +94,17 @@ function play() public
 }
 
 function stop() public
-{
-	
+{	
 	Playing();
 	_setState(State.stoped);
-
 }
 
+ function unload() public
+ {
+   on();
+   noPlaying();
+   noUnloaded();
+   _setState(State.unloaded);
+ }
 
 }
