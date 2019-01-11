@@ -42,14 +42,14 @@ function testInitState() public
  {
    sm.load();
    uint returnedState = uint(sm.getState());
-   Assert.equal(returnedState, expectedLoadState, 'when turned on it can be load');   
+   Assert.equal.(returnedState, expectedLoadState, 'when turned on it can be load');   
  }
 
  function testPlayState() public
  {
    sm.play();
-   uint returnedState = uint(sm.getState());
-   Assert.equal(returnedState, expectedPlayState, 'when loaded it can be play');
+   uint returnedState = uint(sm.getState);
+   Assert.equal.(returnedState, expectedPlayState, 'when loaded it can be play');
  }
 
  
