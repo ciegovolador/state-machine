@@ -24,6 +24,8 @@ contract testSM {
       Assert.equal(returnedState, expectedConstructorState, "when deployed State Machine should be turned on .");
     }
 
+  //end smoke test
+  
 function testEndState() public
 {
 	sm.end();
@@ -31,6 +33,7 @@ function testEndState() public
 	Assert.equal(returnedState, expectedEndState,'when started it can be turned off');
 }
 
+ 
 function testInitState() public
 {
 	sm.init();
@@ -38,6 +41,10 @@ function testInitState() public
 	Assert.equal(returnedState, expectedInitState, 'when is off it can be turned on');
 }
 
+//end exterior loop
+
+//begin happy path
+ 
  function testLoadState() public
  {
    sm.load();
@@ -52,5 +59,27 @@ function testInitState() public
    Assert.equal(returnedState, expectedPlayState, 'when loaded it can be play');
  }
 
+
+ function testStop() public
+ {
+   sm.stop();
+   uint returnedState = uint(sm.getState());
+   Assert.equal(returnedState, expectedStopState, 'when playing it can be stoped');
+ }
+
+ function testUnload() public
+ {
+   sm.unload();
+   uint returnedState = uint(sm.getState());
+   Assert.equal(returnedState, expectedUnloadeState, 'when stoped it can be unload');
+ }
+
+ function testEnd() public
+ {
+   sm.end();
+   uint returnedState = uint(sm.getState());
+   Assert.equal(returnedState, expectedEndState, 'when stoped it can be turned off');
+ }
+ //end happy path
  
 }
