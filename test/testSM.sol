@@ -3,6 +3,8 @@ pragma solidity ^0.5.0;
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/StateMachine.sol";
+import './proxyTester.sol';
+
 
 contract testSM {
 
@@ -21,7 +23,7 @@ contract testSM {
   function testConstructorState() public
     {
       uint returnedState = uint(sm.getState());
-      Assert.equal(returnedState, expectedConstructorState, "when deployed State Machine should be turned on .");
+      Assert.equal( returnedState, expectedConstructorState, 'when deployed State Machine should be turned on .');
     }
 
   //end smoke test
@@ -80,6 +82,46 @@ function testInitState() public
    uint returnedState = uint(sm.getState());
    Assert.equal(returnedState, expectedEndState, 'when stoped it can be turned off');
  }
- //end happy path
+ //end happy path 
+
+ //testing restrictions
+ //init restriction
+
+ function testNoInitAgain() public {
+   sm.init();
+   (bool b, ) =  address(sm).call(abi.encodeWithSignature("init()"));
+   Assert.isFalse(b,"when off you can't turned off again");
+ }
+
+
+ function testNoPlayFromInit() public {
+   //   sm.init();
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("play()"));
+   Assert.isFalse(b,"you can't play without load first");
+
+ }
+
+ function testNoStopFromInit() public{
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("stop()"));
+   Assert.isFalse(b, "you can't stop from init");
+ }
+
+
+ function testNoUnloadFromInit() public{
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("unload()"));                              Assert.isFalse(b, "you can't stop from init");
+ }
+ //end init restrictions
+
+ //begin load restriction
  
-}
+
+
+ function testNoInitFromLoaded() public{
+  sm.load();
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("init()"));                        
+      Assert.isFalse(b, "It went from loaded to Init");                                          }
+
+ 
+ //end load restrictions
+ 
+}//test end

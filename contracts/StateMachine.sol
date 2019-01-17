@@ -21,89 +21,108 @@ function getState() view public returns(State)
 	return state;
 }
 
-function on() private view
+function notAtOff() private view
 {
 	require(state != State.off, 'machine is turn off');
 }
 
-function off() private view
+function atOff() private view
 {
 	require(state == State.off, 'machine× is turned on');
 }
 
-function noLoaded() private view
+ function atOn() private view{
+   require(state == State.on, 'Machine is not at init');
+ }
+
+ function notAtOn() private view{
+   require(state != State.on, 'Macine in at Init');
+ }
+
+function notAtLoaded() private view
 {
 	require(state != State.loaded,'machine is loaded');
 }
 
-function noPlaying() private view
+ function atLoaded() private view{
+   require( state == State.loaded, 'Machine is not loaded');
+ }
+
+function notAtPlaying() private view
 {
 	require(state != State.playing, 'machine is playing');
 }
 
-function Playing() private view
+function atPlaying() private view
 {
 	require(state == State.playing, 'machine is not playing');
 }
 
- function stoped() private view
+ function atStoped() private view
  {
    require(state == State.stoped, 'Machine is Not  Stoped');
  }
 
- function noStoped() private view
+ function notAtStoped() private view
  {
    require(state != State.stoped, 'Machine is Stoped');
  }
 
- function noUnloaded() private view
+ function notAtUnloaded() private view
 {
 	require(state != State.unloaded, 'machine is unloaded');
 }
 
+
+ function atUnloaded() public view{
+   require(state == State.unloaded, 'Machine is not loaded');
+ }
+ 
 function end() public 
 {
-	on();
-	noLoaded();
-	noPlaying();
-	noStoped();
+	notAtOff();
+	notAtLoaded();
+	notAtPlaying();
+	notAtStoped();
 	_setState(State.off);
 }
 
 function init() public
 {
-	off();
+	atOff();
 	_setState(State.on);
 }
 
  function load() public
  {
-   on();
-   noLoaded();
-   noPlaying();
-   noStoped();
+   notAtOff();
+   notAtLoaded();
+   notAtPlaying();
+   notAtStoped();
    _setState(State.loaded);
  }
  
 function play() public
 {
-	on();
-	noPlaying();
-	noUnloaded();
+	notAtOff();
+	notAtOn();
+	notAtPlaying();
+	notAtUnloaded();
 	_setState(State.playing);
 }
 
 function stop() public
 {	
-	Playing();
+	atPlaying();
 	_setState(State.stoped);
 }
 
  function unload() public
  {
-   on();
-   noPlaying();
-   noUnloaded();
+   notAtOff();
+   notAtOn();
+   notAtPlaying();
+   notAtUnloaded();
    _setState(State.unloaded);
  }
 
