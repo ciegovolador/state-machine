@@ -120,19 +120,47 @@ function testInitState() public
    (bool b, ) = address(sm).call(abi.encodeWithSignature("init()"));                        
       Assert.isFalse(b, "It went from loaded to Init");                                          }
 
- /*
+ 
  function testNoLoadedAgain() public{
    (bool b, ) = address(sm).call(abi.encodeWithSignature("load()"));
       Assert.isFalse(b, "It went from loaded to loaded");
  }
  
- function testNoLoadedFromAgain() public{
-   (bool b, ) = address(sm).call(abi.encodeWith\
-Signature("load()"));
-      Assert.isFalse(b, "It went from loaded to\
- loaded");
+ function testNoStopFromLoaded() public{
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("stop()"));
+   Assert.isFalse(b, "It went from loaded to stoped");
  }
- */
+
+
+ function testNoEndFromLoaded() public{
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("end()"));
+   Assert.isFalse(b, "It went from loaded to  off");
+ }
+  
  //end load restrictions
+
+ //begin play restictions
+
+ function run(string memory s)public returns(bool){
+   (bool b, ) = address(sm).call(abi.encodeWithSignature(s));
+   return b;
+ }
+ 
+ function testNoInitFromPlaying() public{
+   sm.play();
+   Assert.isFalse(run("play()"), "It went from playing to init");
+
+ }
+
+ 
+ //end play restrictions
+
+ //begin stop restrictions
+
+ //end stop restrictions
+
+ //begin unload restrictions
+
+ //end unload restrictions
  
 }//test end
