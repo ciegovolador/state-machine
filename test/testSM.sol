@@ -3,7 +3,6 @@ pragma solidity ^0.5.0;
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/StateMachine.sol";
-import './proxyTester.sol';
 
 
 contract testSM {
@@ -121,7 +120,19 @@ function testInitState() public
    (bool b, ) = address(sm).call(abi.encodeWithSignature("init()"));                        
       Assert.isFalse(b, "It went from loaded to Init");                                          }
 
+ /*
+ function testNoLoadedAgain() public{
+   (bool b, ) = address(sm).call(abi.encodeWithSignature("load()"));
+      Assert.isFalse(b, "It went from loaded to loaded");
+ }
  
+ function testNoLoadedFromAgain() public{
+   (bool b, ) = address(sm).call(abi.encodeWith\
+Signature("load()"));
+      Assert.isFalse(b, "It went from loaded to\
+ loaded");
+ }
+ */
  //end load restrictions
  
 }//test end
