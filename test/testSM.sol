@@ -91,6 +91,7 @@ function testInitState() public
  //end happy path 
 
  //testing restrictions
+
  //init restriction
 
  function testNoInitAgain() public {
@@ -117,18 +118,16 @@ function testInitState() public
  //end init restrictions
 
  //begin load restriction
- 
 
+
+ function testNoLoadAgain() public{
+   sm.load();
+   Assert.isFalse(run("load()"), "It went f\
+rom loaded to loaded");
+ }
 
  function testNoInitFromLoaded() public{
-  sm.load();
-   
-      Assert.isFalse(run("init()"), "It went from loaded to Init");                                          }
-
- 
- function testNoLoadedAgain() public{
-   
-      Assert.isFalse(run("load()"), "It went from loaded to loaded");
+      Assert.isFalse(run("init()"), "It went from loaded to Init");
  }
  
  function testNoStopFromLoaded() public{
@@ -146,19 +145,16 @@ function testInitState() public
 
  //begin play restictions
 
+ function testNoPlayAgain() public{
+   sm.play();
+   Assert.isFalse(run("play()"), "It went from  playing to playing");
+
+ }
  
  function testNoInitFromPlaying() public{
-   sm.play();
    Assert.isFalse(run("play()"), "It went from playing to init");
 
  }
-
-
- function testNoPlayingAgain() public{
-   Assert.isFalse(run("play()"), "It went from playing to playing");
-
- }
-
  
  function testNoLoadFromPlaying() public{
    Assert.isFalse(run("load()"), "It went fromplaying to load");
@@ -215,20 +211,45 @@ function testNoInitFromUnload() public{
 
  }
 
-
- function testNoPlayFromUnload() public{
+function testNoPlayFromUnload() public{
    Assert.isFalse(run("play()"), "It went from  Unload to playing");
 
  }
 
-
- function testNoStopFromUnload() public{
+function testNoStopFromUnload() public{
    Assert.isFalse(run("stop()"), "It went from Unload to Stoped");
+
+ }
+ 
+ //end unload restrictions
+
+//begin unload restrictions
+
+ function testNoEndAgain() public{
+   sm.end();
+   Assert.isFalse(run("end()"), "It went from Off to Off");
+ }
+ 
+
+ function testNoLoadFromEnd() public {
+   Assert.isFalse(run("load()"), "It went from Off to Loaded");
 
  }
 
 
- 
- //end unload restrictions
- 
+ function testNoPlayFromEnd() public {
+   Assert.isFalse(run("play()"), "It went from Off to Playing");
+
+ }
+
+function testNoStopFromEnd() public {
+   Assert.isFalse(run("stop()"), "It went from Off to Stoped");
+
+ }
+
+function testNoUnloadFromEnd() public {
+   Assert.isFalse(run("unload()"), "It went from Off to Loaded");
+
+ }
+
 }//test end
