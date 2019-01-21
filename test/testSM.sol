@@ -98,7 +98,6 @@ function testInitState() public
  Assert.isFalse(run("init()"),"when off you can't turned off again");
  }
 
-
  function testNoPlayFromInit() public {
    
    Assert.isFalse(run("play()"),"you can't play without load first");
@@ -154,15 +153,82 @@ function testInitState() public
 
  }
 
+
+ function testNoPlayingAgain() public{
+   Assert.isFalse(run("play()"), "It went from playing to playing");
+
+ }
+
+ 
+ function testNoLoadFromPlaying() public{
+   Assert.isFalse(run("load()"), "It went fromplaying to load");
+
+ }
+
+ function testNoUnloadFromPlaying() public{
+   Assert.isFalse(run("unload()"), "It went from playing to Unload");
+
+ }
+
+ function testNoEndFromPlaying() public{
+   Assert.isFalse(run("end()"), "It went from playing to Off");
+
+ }
  
  //end play restrictions
 
  //begin stop restrictions
 
- //end stop restrictions
+ function testNoStopAgain() public{
+   sm.stop();
+   Assert.isFalse(run("stop()"), "It went fromStoped to Stoped");
 
+ }
+
+ function testNoInitFromStoped() public{
+   Assert.isFalse(run("init()"), "It went from Stoped to On");
+
+ }
+
+ function testNoLoadFromStoped() public{
+   Assert.isFalse(run("load()"), "It went from stoped to loaded");
+
+ }
+
+ function testNoEndFromStoped() public{
+   Assert.isFalse(run("end()"), "It went from\
+ stoped to Off");
+
+ }
+
+ //end stop restrictions
+ 
  //begin unload restrictions
 
+ function testNoUnloadAgain() public{               sm.unload();
+   Assert.isFalse(run("unload()"), "It went from Unloaded to Unloaded");
+
+ }
+
+function testNoInitFromUnload() public{            
+   Assert.isFalse(run("init()"), "It went from Unload to On");
+
+ }
+
+
+ function testNoPlayFromUnload() public{
+   Assert.isFalse(run("play()"), "It went from  Unload to playing");
+
+ }
+
+
+ function testNoStopFromUnload() public{
+   Assert.isFalse(run("stop()"), "It went from Unload to Stoped");
+
+ }
+
+
+ 
  //end unload restrictions
  
 }//test end
